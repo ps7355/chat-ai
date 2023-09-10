@@ -1,0 +1,28 @@
+{
+    "name": "WEB_AI",
+    "description": "Chatgpt Everywhere",
+    "version": "1.0.0",
+    "content_security_policy": {
+        "extension_pages": "script-src 'self' ; object-src 'self'"
+    },
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "icons/web128.png"
+    },
+    "manifest_version": 3,
+    "commands": {
+        "my-command": {
+          "suggested_key": {
+            "default": "Ctrl+Shift+K",
+            "mac": "MacCtrl+Shift+K"
+          },
+          "description": "My extension command"
+        }
+      },
+      "permissions": [
+        "clipboard",
+        "clipboardRead",
+        "clipboardWrite",
+        "activeTab"
+      ]
+}
